@@ -1,0 +1,28 @@
+{
+  "name": "mern-todoapp",
+  "version": "1.0.0",
+  "description": "TODO application using MERN.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaranKhirsariya/MERN-TODOapp.git"
+  },
+  "keywords": [
+    "MERN",
+    "TODOapp"
+  ],
+  "author": "Karan Khirsariya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaranKhirsariya/MERN-TODOapp/issues"
+  },
+  "homepage": "https://github.com/KaranKhirsariya/MERN-TODOapp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.6"
+  }
+}
