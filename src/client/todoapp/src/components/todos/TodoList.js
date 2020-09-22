@@ -4,6 +4,7 @@ import './TodoList.css';
 import TodoListItem from './TodoListItem'
 
 function TodoList() {
+  
   const [todos, setTodos] = useState([])
   const [todoItem, setTodoItem] = useState("");
 
@@ -83,7 +84,7 @@ function TodoList() {
       </form>
       <ul className="todolist-items">
         {todos.map((todo) => {
-          return (<TodoListItem data={todo} onDelete={handleDelete} onDone={handleDone} />)
+          return (<TodoListItem key={todo._id} data={todo} onDelete={handleDelete} onDone={handleDone} />)
         })}
       </ul>
     </div>
