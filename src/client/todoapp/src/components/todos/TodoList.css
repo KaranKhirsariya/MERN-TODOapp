@@ -1,0 +1,6 @@
+.todolist-items{
+    list-style-type: none;
+}
+.todolist-items .TodoListItem.done .TodoListItem__text{
+    text-decoration: line-through;
+}
