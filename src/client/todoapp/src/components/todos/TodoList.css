@@ -4,18 +4,31 @@
 }
 .todolist-items .TodoListItem{
     padding: 5px 10px;
+    border-bottom: 1px solid lightgray;
 }
-.todolist-items .TodoListItem.done .TodoListItem__text{
+.todolist-items .TodoListItem.done [editext='view']{
     text-decoration: line-through;
 }
-.todolist-items .TodoListItem .TodoListItem__text{
-    width: 200px;
-    margin-left: 5px;
-    border-bottom: 1px solid gray;
-    display: inline-block;
+button.TodoListItem__delete {
+    display: inline-flex;
+    visibility: hidden;
+    border-radius: 1px;
+    outline: none;
+    padding: 0.6em;
+    min-width: 30px;
+    height: 100%;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    vertical-align: middle;
 }
-.todolist-items .TodoListItem .TodoListItem__text--editing input{
-    border: none;
-    border-bottom: 1px solid gray;
-    margin-left: 16px;
+.TodoListItem:hover button.TodoListItem__delete{
+    visibility: visible;
+}
+button.TodoListItem__delete img{
+    margin: 3px;
+}
+.EditText-wrapper{
+    margin: 0px 10px;
+    display: inline-block;
 }
