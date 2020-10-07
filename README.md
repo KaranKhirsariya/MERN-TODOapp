@@ -1,11 +1,10 @@
 # todo-app-backend-node
-=======
+
 
 Simple ToDo App with Express.js, MongoDB and NodeJs.
 
 ## Requirements:
 
- - Mongo DB uri
  - .env file in this directory with following variables
     - ```PORT``` (default value: ```3001```)
     - ```MONGODB_URI``` (default value: ```mongodb://localhost:27017/```)
